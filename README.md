@@ -1,1 +1,1 @@
-uses iterm2 themse from http://ethanschoonover.com/solarized
+-  iterm2 theme from http://ethanschoonover.com/solarized

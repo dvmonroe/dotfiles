@@ -4,7 +4,7 @@ brew upgrade --all
 brew install autoconf
 brew install automake
 brew install bash-completion
-brew install brew-cask
+
 brew install docker
 brew install docker-compose
 brew install docker-machine
@@ -38,8 +38,10 @@ brew install xz
 # https://github.com/Homebrew/homebrew-services
 brew tap homebrew/services
 
-# kept up with homebrew
 # https://github.com/caskroom/homebrew-cask
+brew install brew-cask
+brew tap caskroom/versions
+
 brew cask install google-chrome
 brew cask install evernote
 brew cask install postman

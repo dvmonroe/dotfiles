@@ -5,6 +5,10 @@ brew install autoconf
 brew install automake
 brew install bash-completion
 
+
+brew install aws-cfn-tools   
+brew install aws-elasticbeanstalk 
+brew install awscli
 brew install docker
 brew install docker-compose
 brew install docker-machine

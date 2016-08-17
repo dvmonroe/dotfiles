@@ -6,8 +6,8 @@ brew install automake
 brew install bash-completion
 
 
-brew install aws-cfn-tools   
-brew install aws-elasticbeanstalk 
+brew install aws-cfn-tools
+brew install aws-elasticbeanstalk
 brew install awscli
 brew install docker
 brew install docker-compose
@@ -28,15 +28,19 @@ brew install libtiff
 brew install libtool
 brew install libyaml
 brew install lzo
+brew install macvim --override-system-vim
 brew install ngrok
 brew install node
 brew install openssl
 brew install pkg-config
 brew install posgresql
 brew install readline
+brew install reattach-to-user-namespace
 brew install redis
+brew install tmux
 brew install wget
 brew install xz
+brew install zsh
 
 
 # https://github.com/Homebrew/homebrew-services

@@ -1,4 +1,4 @@
-# taken from https://github.com/mathiasbynens/dotfiles/blob/master/.vimrc
+" taken from https://github.com/mathiasbynens/dotfiles/blob/master/.vimrc
 
 " Use the Solarized Dark theme
 set background=dark

@@ -9,13 +9,19 @@ brew install bash-completion
 brew install aws-cfn-tools
 brew install aws-elasticbeanstalk
 brew install awscli
+brew install chromedriver
+brew install crystal-lang
 brew install docker
 brew install docker-compose
 brew install docker-machine
 brew install elasticsearch
+brew install elixir
+brew install ethereum
+brew install filebeat
 brew install freetype
 brew install git
 brew install gnupg
+brew install gpg-agent
 brew install graphviz
 brew install heroku-toolbelt
 brew install imagemagick --with-webp
@@ -29,6 +35,7 @@ brew install libtool
 brew install libyaml
 brew install lzo
 brew install macvim --override-system-vim
+brew install metabase
 brew install ngrok
 brew install node
 brew install openssl
@@ -49,13 +56,21 @@ brew tap homebrew/services
 # https://github.com/caskroom/homebrew-cask
 brew install brew-cask
 brew tap caskroom/versions
+brew tap golemfactory/golem
 
+brew cask install brave
+brew cask install ethereum-wallet
 brew cask install google-chrome
+brew cask install golem
 brew cask install evernote
+brew cask install ngrok
+brew cask install owasp-zap
 brew cask install postman
 brew cask install slack
 brew cask install spotify
 brew cask install sublime-text3
-brew cask install tor-browser
+brew cask install torbrowser
+brew cask install vagrant
+brew cask install virtualbox
 
 brew cleanup

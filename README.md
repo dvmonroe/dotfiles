@@ -1,1 +1,0 @@
--  iterm2 theme from http://ethanschoonover.com/solarized

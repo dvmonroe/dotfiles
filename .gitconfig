@@ -11,6 +11,9 @@
   remotes = remote -v
   # Pretty log output
   hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
+  c = commit
+  s = status
+  ch = checkout
 
 [color]
   # Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -34,3 +37,11 @@
   remote = origin
   merge = refs/heads/master
 
+[core]
+  excludesfile = /Users/royhobbs/.gitignore
+[credential] 
+  helper = cache --timeout=86400
+[commit]
+  gpgsign = false
+[tag]
+  gpgsign = false

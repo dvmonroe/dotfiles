@@ -1,9 +1,29 @@
-" taken from https://github.com/mathiasbynens/dotfiles/blob/master/.vimrc
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'junegunn/fzf.vim'
+Plugin 'qpkorr/vim-bufkill'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set rtp+=/usr/local/opt/fzf
+
+" taken from https://github.com/mathiasbynens/dotfiles/blob/master/.vimrc
 " Use the Solarized Dark theme
+syntax enable
 set background=dark
 colorscheme solarized
-let g:solarized_termtrans=1
+let g:solarized_termtrans=256
 
 " Make Vim more useful
 set nocompatible
@@ -51,6 +71,7 @@ set ignorecase
 " Highlight dynamically as pattern is typed
 set incsearch
 " Always show status line
+
 set laststatus=2
 " Enable mouse in all modes
 set mouse=a
@@ -88,6 +109,11 @@ noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Automatic commands
 if has("autocmd")
   " Enable file type detection
@@ -97,3 +123,11 @@ if has("autocmd")
   " Treat .md files as Markdown
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+execute pathogen#infect()
+autocmd VimEnter * NERDTree | wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeShowHidden = 1

@@ -1,1 +1,9 @@
 .DS_Store
+.rbenv-gemsets
+Gaurdfile
+.rubocop.yml
+dump.rdb
+test/support
+db/dumps/*
+tags
+

@@ -76,7 +76,7 @@ brew cask install ethereum-wallet
 brew cask install google-chrome
 brew cask install golem
 brew cask install google-chrome
-brew cask install item2
+brew cask install iterm2
 brew cask install java
 brew cask install kitematic
 brew cask install mysqlworkbench

@@ -75,8 +75,7 @@ brew cask install adobe-reader
 brew cask install ethereum-wallet
 brew cask install google-chrome
 brew cask install golem
-brew cask install google-chrome
-brew cask install item2
+brew cask install iterm2
 brew cask install java
 brew cask install kitematic
 brew cask install mysqlworkbench
@@ -86,7 +85,7 @@ brew cask install owasp-zap
 brew cask install postman
 brew cask install slack
 brew cask install spotify
-brew cask install torbrowser
+brew cask install tor-browser
 brew cask install vagrant
 brew cask install virtualbox
 

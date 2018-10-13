@@ -5,7 +5,6 @@ brew install autoconf
 brew install automake
 brew install bash-completion
 
-
 brew install aws-cfn-tools
 brew install aws-elasticbeanstalk
 brew install awscli
@@ -48,8 +47,10 @@ brew install ngrok
 brew install node
 brew install openssl
 brew install pkg-config
-brew install posgresql
+brew install postgresql
 brew install privoxy
+brew install python3
+brew install rbenv-gemset
 brew install readline
 brew install reattach-to-user-namespace
 brew install redis
@@ -59,6 +60,7 @@ brew install wget
 brew install xhyve
 brew install xz
 brew install yarn
+brew install yubico-piv-tool
 brew install zookeeper
 brew install zsh
 
@@ -72,15 +74,19 @@ brew tap caskroom/versions
 brew tap golemfactory/golem
 
 brew cask install adobe-reader
-brew cask install ethereum-wallet
-brew cask install google-chrome
+brew cask install dropbox
+brew cask install evernote
+brew cask install firefox
+brew cask install font-hack-nerd-font
 brew cask install golem
+brew cask install golem-mainnet-launcher
+brew cask install google-chrome
 brew cask install iterm2
 brew cask install java
 brew cask install kitematic
 brew cask install mysqlworkbench
-brew cask install evernote
 brew cask install ngrok
+brew cask install osxfuse
 brew cask install owasp-zap
 brew cask install postman
 brew cask install slack
@@ -88,5 +94,7 @@ brew cask install spotify
 brew cask install tor-browser
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install wireshark
+brew cask install xquartz
 
 brew cleanup

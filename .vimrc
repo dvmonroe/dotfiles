@@ -11,6 +11,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'junegunn/fzf.vim'
 Plugin 'qpkorr/vim-bufkill'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -131,3 +132,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeShowHidden = 1
+
+" vv to generate new vertical split
+nnoremap <silent> vv <C-w>v
+
+:set tabstop=2
+:set shiftwidth=2
+:set expandtab

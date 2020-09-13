@@ -39,9 +39,16 @@
 
 [core]
   excludesfile = /Users/royhobbs/.gitignore
+
+[pager]
+  branch = false
+  tags = false
+  
 [credential] 
   helper = cache --timeout=86400
 [commit]
-  gpgsign = false
+  gpgsign = true
 [tag]
-  gpgsign = false
+  gpgsign = true
+[pull]
+	rebase = true

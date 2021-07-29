@@ -16,8 +16,6 @@ brew install clingo
 brew install cmake
 brew install coreutils
 brew install ctags
-brew install docker
-brew install docker-compose
 brew install docker-machine
 brew install docker-machine-driver-xhyve
 brew install doxygen
@@ -339,30 +337,30 @@ brew tap homebrew/services
 brew tap caskroom/fonts
 brew tap golemfactory/golem
 
-brew cask install docker
-brew cask install dropbox
-brew cask install evernote
-brew cask install firefox
-brew cask install golem-mainnet-launcher
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install java
-brew cask install kitematic
-brew cask install mysqlworkbench
-brew cask install ngrok
-brew cask install osxfuse
-brew cask install owasp-zap
-brew cask install postman
-brew cask install slack
-brew cask install spotify
-brew cask install sublime-text
-brew cask install tor-browser
-brew cask install vagrant
-brew cask install wireshark
-brew cask install xquartz
-brew cask install zoomus
+brew install homebrew/cask/docker
+brew install dropbox
+brew install evernote
+brew install firefox
+brew install golem-mainnet-launcher
+brew install google-chrome
+brew install iterm2
+brew install java
+brew install kitematic
+brew install mysqlworkbench
+brew install ngrok
+brew install osxfuse
+brew install owasp-zap
+brew install postman
+brew install slack
+brew install spotify
+brew install sublime-text
+brew install tor-browser
+brew install vagrant
+brew install wireshark
+brew install xquartz
+brew install zoom
 
-# Needs osxfuse cask before install
+# Needs osxfuse before install
 brew install sshfs
 
 brew cleanup

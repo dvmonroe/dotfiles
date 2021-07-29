@@ -12,10 +12,13 @@ Plugin 'tpope/vim-rails'
 Plugin 'junegunn/fzf.vim'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'preservim/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+execute pathogen#infect()
 
 set rtp+=/usr/local/opt/fzf
 
@@ -125,7 +128,6 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
-execute pathogen#infect()
 autocmd VimEnter * NERDTree | wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

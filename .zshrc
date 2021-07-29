@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export TERM="xterm-256color"
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/snowball/.oh-my-zsh
+export ZSH=/Users/$(whoami)/.oh-my-zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -92,6 +92,7 @@ PATH=/usr/local/bin:$PATH
 PATH=$HOME/bin:$PATH
 
 alias cap="noglob bundle exec cap"
+alias dc="docker-compose"
 
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 export PATH="$(brew --prefix gnu-tar)/libexec/gnubin:/usr/local/bin:$PATH"
@@ -114,3 +115,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+# Added so mysql2 gem can be bundled
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
